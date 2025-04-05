@@ -1,9 +1,9 @@
-import { Container, LoadIndicator } from './styles'; 
+import { Container, LoadIdicator } from './styles';
 
 export function Loading() {
   return (
     <Container>
-      <LoadIndicator/>
+      <LoadIdicator />
     </Container>
-  )
+  );
 }
