@@ -1,3 +1,4 @@
+import theme from "src/theme";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -7,14 +8,14 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
-  font-size: ${({ theme}: {theme: any}) => theme.FONT_SIZE.XL}px;
-  font-family: ${({ theme}: {theme: any}) => theme.FONT_FAMILY.BOLD};
-  color: ${({ theme}: {theme: any}) => theme.COLORS.WHITE};
+  font-size: ${theme.FONT_SIZE.XL}px;
+  font-family: ${theme.FONT_FAMILY.BOLD};
+  color: ${theme.COLORS.WHITE};
   `;
 
 export const Subtitle = styled.Text`
 text-align: center;
-font-size: ${({ theme}: {theme: any}) => theme.FONT_SIZE.MD}px;
-font-family: ${({ theme}: {theme: any}) => theme.FONT_FAMILY.REGULAR};
-color: ${({ theme}: {theme: any}) => theme.COLORS.GRAY_300};
+font-size: ${theme.FONT_SIZE.MD}px;
+font-family: ${theme.FONT_FAMILY.REGULAR};
+color: ${theme.COLORS.GRAY_300};
 `;
